@@ -26,6 +26,8 @@
 		<a-assets>
 			<a-asset-item id="earth"
 						  src="assets/Earth.gltf"></a-asset-item>
+			<a-asset-item id="earthnavmesh"
+						  src="assets/EarthNavmesh.gltf"></a-asset-item>
 			<a-asset-item id="ccollideonly"
 						  src="assets/CCollideOnly.gltf"></a-asset-item>
 			<a-asset-item id="cpebbles"
@@ -96,12 +98,18 @@
 				 height="6"
 				 material="opacity: 0.1; side: double;"></a-plane>
 		
+		<a-entity id="earthnavmesh"
+				  gltf-model="#earthnavmesh"
+				  position="0 0 0"
+				  rotation="0 0 0"
+				  scale="1 1 1"
+				  material="opacity: 0.0;"
+				  nav-mesh></a-entity>
 		<a-entity id="earth"
 				  gltf-model="#earth"
 				  position="0 0 0"
 				  rotation="0 0 0"
-				  scale="1 1 1"
-				  nav-mesh></a-entity>
+				  scale="1 1 1"></a-entity>
 		<a-entity id="ccollideonly"
 				  gltf-model="#ccollideonly"
 				  position="0 0 0"
